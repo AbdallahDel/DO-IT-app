@@ -5,22 +5,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-
-
-
-
-
-
-
-
-
-    "dev": "next dev",
+  "dev": "next dev",
   "build": "next build",
   "start": "next start",
   "lint": "next lint",
-  "export": "next export",
-  "deploy": "gh-pages -d out" 
-  },
+  "predeploy": "next build && next export",
+  "deploy": "gh-pages -d out"
+},
+
   "dependencies": {
     "firebase": "^11.0.2",
     "framer-motion": "^10.8.5",
@@ -48,5 +40,5 @@
 
 
   },
-  "homepage": "https://AbdallahDel.github.io/DO-IT/app"
+  "homepage": "https://AbdallahDel.github.io/do-it-app/app"
 }
