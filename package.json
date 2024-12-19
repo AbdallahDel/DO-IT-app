@@ -1,13 +1,25 @@
+
 {
   "name": "fastodo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+
+
+
+
+
+
+
+
+
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "export": "next export",
+  "deploy": "gh-pages -d out" 
   },
   "dependencies": {
     "firebase": "^11.0.2",
@@ -30,5 +42,11 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "vite": "^4.2.0"
-  }
+
+
+
+
+
+  },
+  "homepage": "https://AbdallahDel.github.io/DO-IT/app"
 }

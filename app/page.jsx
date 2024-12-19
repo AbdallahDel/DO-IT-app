@@ -1,16 +1,14 @@
 "use client"; // Mark the file as a Client Component
 
-import { useRouter } from "next/navigation"; // Use the correct import for app directory
+import { useRouter } from "next/navigation"; // Correct import for App Router
 import { useEffect } from "react";
 
 export default function HomeRedirect() {
-  const router = useRouter(); // Correct hook for app directory
+  const router = useRouter(); // Hook for navigation in the App directory
 
   useEffect(() => {
-    router.push("/app"); // Use `push` instead of `replace` in next/navigation
+    router.push("/app"); // This redirects to the /app route
   }, [router]);
 
   return null; // Render nothing while redirecting
 }
-
-
