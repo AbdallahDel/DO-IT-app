@@ -58,10 +58,8 @@ function MidContainer(props) {
       case 'date':
         sortedArray.sort((a, b) => new Date(a.dateStart) - new Date(b.dateStart));
         break;
-      case 'priority':
-        const priorityOrder = { low: 1, medium: 2, high: 3 };
-        sortedArray.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
-        break;
+      
+        
       default:
         sortedArray = [...filteredTasks];
     }
@@ -120,7 +118,7 @@ function MidContainer(props) {
             text-neutral-300 bg-neutral-900 hover:bg-neutral-800 transition-all"
             onClick={() => setShowSort(true)}
           >
-            Sort
+            
             {showSort &&
               <div
                 ref={ref}

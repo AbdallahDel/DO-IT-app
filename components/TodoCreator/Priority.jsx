@@ -7,7 +7,7 @@ function Priority(props) {
 
   return (
     <div>
-      <div className="font-semibold mb-3">Priority</div>
+      <div className="font-semibold mb-3">Priorityyyy</div>
       <div className="flex items-center gap-2">
         {priorityOptions.map((option) => (
           <div 
